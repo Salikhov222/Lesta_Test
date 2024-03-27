@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Text Files</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Дополнительные стили */
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 100px; /* Отступ от верхнего края */
+        }
+        .form-group {
+            margin-bottom: 20px; /* Отступ между элементами формы */
+        }
+        .btn-upload {
+            width: 200px; /* Ширина кнопки */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mb-4">Upload Text Files</h2>
+        <div class="row justify-content-center">
+            <form action="/analyze" method="post" enctype="multipart/form-data" class="text-center">
+                <div class="form-group col-auto">
+                    <input type="file" name="files" class="form-control-file" multiple>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-upload">Upload</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
